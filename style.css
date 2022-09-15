@@ -379,6 +379,9 @@ a#skiptocontent:active, a#skiptocontent:focus {
 .inner-bg-1 {
 	background-image: url(assets/images/door-to-door-transport.jpg);
 }
+.inner-bg-how {
+	background-image: url(assets/images/how.jpg);
+}
 .inner-bg-opencar {
 	background-image: url(assets/images/open-banner.jpeg);
 }
@@ -397,6 +400,15 @@ a#skiptocontent:active, a#skiptocontent:focus {
 }
 .inner-bg-classic {
 	background-image: url(assets/images/Classic-Car-Auctions.jpg);
+}
+.inner-bg-dealer {
+	background-image: url(assets/images/dealer-banner.jpg);
+}
+.inner-bg-rental {
+	background-image: url(assets/images/rental.webp);
+}
+.inner-bg-review {
+	background-image: url(assets/images/reviews.webp);
 }
 .inner-bg-military {
 	background-image: url(assets/images/military-bg.jpg);
@@ -999,7 +1011,7 @@ header:after {
 /*-------------- Section Css ------------------*/
 
 .wshipping-content-block {
-	padding: 80px 0px;
+	padding: 60px 0px;
 	background-color: #fff;
 }
 .section-title {
@@ -1211,6 +1223,11 @@ header:after {
 	margin-right: 14%;
 	position: relative;
 }
+.process-step1 {
+	margin-right: 14%;
+	position: relative;
+	margin-left: 7%;
+}
 .process-step p {
 	margin-bottom: 0px;
 }
@@ -1224,13 +1241,33 @@ header:after {
 	top: 80px;
 	display: block;
 }
+.process-step1:before {
+	position: absolute;
+	right: -123px;
+	width: 110px;
+	height: 2px;
+	/* background-color: #eb0028; */
+	content: "";
+	top: 80px;
+	display: block;
+}
 .process-step:last-child {
+	margin-right: 0px;
+}
+.process-step1:last-child {
 	margin-right: 0px;
 }
 .process-step:last-child:before {
 	display: none;
 }
 .process-step p {
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	clear: both;
+}
+.process-step1 p {
 	text-transform: uppercase;
 	width: 100%;
 	text-align: center;
@@ -1249,7 +1286,33 @@ header:after {
 	padding-top: 44px;
 	margin-bottom: 10px;
 }
+.process-icon1 {
+	width: 164px;
+	text-align: center;
+	height: 164px;
+	float: left;
+	border-radius: 100%;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 10px;
+}
 .process-icon span {
+	width: 56px;
+	height: 56px;
+	background-color: #eb0028;
+	border: 2px solid #fff;
+	color: #fff;
+	line-height: 56px;
+	font-size: 28px;
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	margin-top: -30px;
+	border-radius: 100%;
+	font-weight: 700;
+}
+
+.process-icon1 span {
 	width: 56px;
 	height: 56px;
 	background-color: #eb0028;
