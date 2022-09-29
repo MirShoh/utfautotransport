@@ -72,6 +72,96 @@ body.box-style .main-wrapper {
 	box-shadow: 0px 0px 15px 2px rgba(100,100,100,0.9);
 	background-color: #fff;
 }
+
+/* Team */
+
+.service-item,
+.price-item,
+.team-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.023);
+    transition: all 0.5s;
+}
+
+.team-item:hover {
+    box-shadow: 0 0 25px rgba(1, 1, 1, 0.264);
+}
+
+.service-item img,
+.team-item img {
+    transition: .5s;
+}
+
+.service-item:hover img,
+.team-item:hover img {
+    /* transform: scale(1.1); */
+}
+
+.service-item a.btn-slide,
+.price-item a.btn-slide,
+.team-item div.btn-slide {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.service-item a.btn-slide i,
+.service-item a.btn-slide span,
+.price-item a.btn-slide i,
+.price-item a.btn-slide span,
+.team-item div.btn-slide i,
+.team-item div.btn-slide span {
+    position: relative;
+    height: 40px;
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 0 35px 35px 0;
+    transition: .5s;
+    z-index: 2;
+}
+
+.team-item div.btn-slide span a i {
+    padding: 0 10px;
+}
+
+.team-item div.btn-slide span a:hover i {
+    background: var(--secondary);
+}
+
+.service-item a.btn-slide span,
+.price-item a.btn-slide span,
+.team-item div.btn-slide span {
+    padding-left: 0;
+    left: -100%;
+    z-index: 1;
+}
+
+.service-item:hover a.btn-slide i,
+.price-item:hover a.btn-slide i,
+.team-item:hover div.btn-slide i {
+    border-radius: 0;
+}
+
+.service-item:hover a.btn-slide span,
+.price-item:hover a.btn-slide span,
+.team-item:hover div.btn-slide span {
+    left: 0;
+}
+
+.service-item a.btn-slide:hover i,
+.service-item a.btn-slide:hover span,
+.price-item a.btn-slide:hover i,
+.price-item a.btn-slide:hover span {
+    background: var(--secondary);
+}
+
+/* Moving text */
+.moving-text{width:100%}.moving-text .blue,.moving-text .green,.moving-text .red{font-weight:700}.moving-text .red{color:red}.moving-text .blue{color:#00a1ef}.moving-text .green{color:#029046}*,:after,:before{box-sizing:border-box}
+
 a {
 	outline: none;
 }
@@ -320,13 +410,13 @@ a#skiptocontent:active, a#skiptocontent:focus {
 /*-------------- Background Css ------------------*/
 
 .slide-bg-1 {
-	background-image: url(assets/images/banner1.jpg);
+	background-image: url(assets/images/slide1.jpg);
 }
 .slide-bg-2 {
-	background-image: url(assets/images/banner4.jpg);
+	background-image: url(assets/images/slide2.jpeg);
 }
 .slide-bg-3 {
-	background-image: url(assets/images/banner3.jpeg);
+	background-image: url(assets/images/slide3.jpg);
 }
 .service-bg-1 {
 	background-image: url(assets/images/service-bg-1.jpg)
@@ -557,6 +647,7 @@ header:after {
 }
 .top-contact {
 	padding-top: 0px;
+	text-align: center!important;
 }
 .top-contact i.fa, .top-contact i.far {
 	color: #eb0028;
@@ -944,20 +1035,32 @@ header:after {
 	text-transform: uppercase;
 	font-size: 14px;
 	background-color: #eb0028;
-	padding: 12px 30px;
+	padding: 15px 30px;
 	border: 0px;
 }
 .wshipping-button:hover {
 	text-decoration: none;
-	background-color: #3b3b3b;
+	background-color: #ff0000;
 	color: #fff;
 	cursor: pointer;
 }
 .wshipping-button.cta-btn {
 	margin-top: 20px;
+	color: white;
 }
 .wshipping-button.slide-btn {
 	margin-top: 20px;
+	font-size: 25px;
+}
+.wshipping-button.slide-btn1 {
+	margin-top: 10px;
+	font-size: 16px;
+	color: white;
+
+}
+.wshipping-button.slide-btn1:hover {
+	color: white;
+	background-color: #1983e7aa;
 }
 .homepage-slides .owl-nav button.owl-prev, .homepage-slides .owl-nav button.owl-next {
 	position: absolute;
@@ -1144,7 +1247,6 @@ header:after {
 	margin-bottom: 20px;
 }
 .why-choose-us {
-	margin-top: 20px;
 	position: relative;
 	width: 100%;
 	float: left;
@@ -1747,7 +1849,6 @@ span.counter-icon {
 	padding-top: 0px;
 }
 .newsletter {
-	margin-top: 30px;
 	position: relative;
 }
 .newsletter .news-input {
@@ -2014,32 +2115,7 @@ span.counter-icon {
 	visibility: hidden;
 	font-size: 20px;
 }
-.latest-gallery:hover i.fa, .latest-gallery:hover i.far{
-	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-	visibility: visible;
-	top: 50%;
-}
-.latest-gallery:after {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	background-color: #000;
-	opacity: 0;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	visibility: hidden;
-	z-index: -1;
-	content: "";
-	border-radius: 2px;
-}
-.latest-gallery:hover:after {
-	opacity: 0.8;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	z-index: 1;
-	visibility: visible;
-}
+
 /********************** About us page Css **********************/
 
 /*-------------- Breadcroumb Css------------------*/
@@ -2407,7 +2483,7 @@ button.btn-submit:hover {
 	left: 0px;
 	top: 0px;
 	height: 100%;
-	background-color: #ed1c24;
+	background-color: #000000cc;
 	color: #fff;
 	padding: 0px 25px;
 }
@@ -2423,15 +2499,15 @@ button.btn-submit:hover {
 	content: "";
 }
 .media-text h2 {
-	color: #000;
+	color: #ccc;
 	font-size: 24px;
 	margin-top: 15px;
 }
 .media-text .readmore-btn {
-	color: #000;
+	color: blue;
 }
 .media-text .readmore-btn:hover {
-	color: #fff;
+	color: blue;
 }
 .media-text-right {
 	left: inherit;
@@ -4496,7 +4572,7 @@ img.float-right {
 .transparant-bg .single-banner, .transparant-bg .single-slide-item {
 	background: none;
 }
-.video-wrapper {
+/* .video-wrapper {
 	width: 100%;
 	background: #000;
 	position: fixed;
@@ -4516,4 +4592,4 @@ img.float-right {
 	left: 0px;
 	top: 0px;
 	z-index: 2;
-}
+} */
