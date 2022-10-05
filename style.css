@@ -4671,6 +4671,13 @@ img.float-right {
 } */
 
 
+p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
+    text-decoration: none;
+}
+
+.pad-img {
+	margin-left: 28px;
+}
 
 @media (max-width: 468px) {
 	.item-tablecell h2 {
