@@ -41,6 +41,8 @@
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="con-res.css">
 <link rel="stylesheet" href="style-home.css">
 <style>
    .popup-box {
@@ -102,6 +104,183 @@
             right: 15px;
             top: 15px;
         }
+
+        
+
+        .changing-text {
+            text-transform: uppercase;
+            color: #fff;
+            font-family: verdana;
+            font-size: 50px;
+        }
+
+        p.fs-5.fw-medium.text-white {
+          font-size: 24px;
+        }
+
+        .texts-container {
+            display: inline-block;
+            height: 40px;
+            overflow: hidden;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+
+        .texts-container span {
+            display: block;
+            animation: moveUp 6s infinite;
+        }
+
+        @keyframes moveUp {
+            0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(-26%);
+            }
+
+            50% {
+                transform: translateY(-51%);
+            }
+
+            75% {
+                transform: translateY(-76%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+
+        .box .heading {
+            background: #FF3E41;
+            border-radius: 7px 7px 0px 0px;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            font-family: "Rubik";
+        }
+
+        .faqs {
+            padding: 0px 20px 20px;
+        }
+
+        ::-webkit-details-marker {
+            float: right;
+            margin-top: 3px;
+        }
+
+        details {
+            background: #ffff;
+            color: #000;
+            padding: 3px 20px;
+            border-radius: 7px;
+            margin-top: 20px;
+            font-family: "Rubik";
+            font-size: 18px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        details summary {
+            outline: none;
+            background-color: #FF3E41;
+            border-radius: 3px;
+            padding-left: 8px;
+            padding: 10px 10px;
+        }
+
+        p.text {
+            background-color: #fff;
+            padding-top: 15px;
+        }
+
+        .section_contact {
+            position: absolute;
+            right: 220px;
+            width: 33%;
+        }
+
+
+        /* Background style */
+
+        #section {
+            position: relative;
+            width: 100%;
+            /* 16:9 aspect ratio image bg */
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .bg {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+        }
+
+        .content-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content {
+            border: 1px solid rgb(242, 227, 12);
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 40px;
+            border-radius: 3px;
+            color: white;
+            font-family: monospace;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            line-height: 1.4;
+        }
+
+        .content h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        #one {
+            background-image: url('assets/images/slide1.jpg');
+            background-size: 100% 100%;
+        }
+
+        #two {
+            background-image: url('assets/images/slide2.jpeg');
+            background-size: 100% 100%;
+        }
+
+        #three {
+            background-image: url('assets/images/slide3.jpg');
+            background-size: 100% 100%;
+        }
+
+
+
+        .visible {
+            opacity: 1;
+        }
+
+        .video {
+            margin-right: 10px;
+        }
+
+ 
 </style>
 
 <!-- Responsive CSS -->
@@ -179,43 +358,43 @@
         <!-- Main menu start -->
          <nav class="mainmenu">
           <ul id="navigation">
-             <li class="nav"><a href="how-it-works.html">HOW IT WORKS?</a>
+             <li class="nav"><a href="/how-it-works/">HOW IT WORKS?</a>
             </li>
             <li><a href="#">FOR INDIVIDUALS </a>
               <ul>
                 <li><a href="#" style="background-color: #eb0028; color: white">We offer</a></li>
-                <li><a href="door-to-door.html">Door-to-door transport</a></li>
-                <li><a href="open-car-transport.html">Open car transport</a></li>
-                <li><a href="enclosed-auto-transport.html">Enclosed auto transport</a></li>
-                <li><a href="motorcycle-shipping.html">Motorcycle shipping</a></li>
+                <li><a href="/door-to-door/">Door-to-door transport</a></li>
+                <li><a href="/open-car-transport/">Open car transport</a></li>
+                <li><a href="/enclosed-auto-transport/">Enclosed auto transport</a></li>
+                <li><a href="/motorcycle-shipping/">Motorcycle shipping</a></li>
                 
                 <li><a href="#" style="background-color: #eb0028; color: white">We serve</a></li>
-                <li><a href="car-buyers-auto-transport.html">Online car buyers</a></li>
-                <li><a href="students-auto-transport.html">College students</a></li>
-                <li><a href="snowbirds-auto-transport.html">Snowbirds</a></li>
-                <li><a href="classic-cars-auto-transport.html">Car collectors</a></li>
-                <li><a href="car-resellers-auto-transport.html">Car resellers shipping</a></li>
-                <li><a href="military-auto-transport.html">Military</a></li>
+                <li><a href="/car-buyers-auto-transport/">Online car buyers</a></li>
+                <li><a href="/students-auto-transport/">College students</a></li>
+                <li><a href="/snowbirds-auto-transport/">Snowbirds</a></li>
+                <li><a href="/classic-cars-auto-transport/">Car collectors</a></li>
+                <li><a href="/car-resellers-auto-transport/">Car resellers shipping</a></li>
+                <li><a href="/military-auto-transport/">Military</a></li>
                 
               </ul>
             </li>
             <li><a href="#">FOR BUSINESSES</a>
               <ul>
-                <li><a href="auto-dealers.html">Auto dealerships</a></li>
-                <li><a href="auto-auction-shipping.html">Auto auctions</a></li>
-                <li><a href="rental-car-companies.html">Car rental companies</a></li>
+                <li><a href="/auto-dealers/">Auto dealerships</a></li>
+                <li><a href="/auto-auction-shipping/">Auto auctions</a></li>
+                <li><a href="/rental-car-companies/">Car rental companies</a></li>
               </ul>
             </li>
             <li><a href="#">WHY US?</a>
               <ul>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="about-us.html">About us</a></li>
-                <li><a href="our-team.html">Our team</a></li>
-                <li><a href="vision.html">Vision and Mission</a></li>
+                <li><a href="/reviews/">Reviews</a></li>
+                <li><a href="/about-us/">About us</a></li>
+                <li><a href="/our-team/">Our team</a></li>
+                <li><a href="/vision/">Vision and Mission</a></li>
               </ul>
             </li>
-            <li><a href="contact-us.html">CONTACT</a></li>
-            <li><a href="tel:(610) 982-1101" style="font-size: 24px; color: #f70000;"><i class="fa fa-phone"></i> (610) 982-1101</a></li>
+            <li><a href="/contact-us/">CONTACT</a></li>
+            <li><a href="tel:(610) 982-1101" class="header_number" style="font-size: 24px; color: #f70000;"><i class="fa fa-phone"></i> (610) 982-1101</a></li>
           </ul>
         </nav>
         <!-- Main menu end --> 
@@ -224,215 +403,183 @@
     <!-- Header area End --> 
   </header>
   
-  <!-- Slider Start -->
-  <div class="homepage-slides-wrapper">
-    <div class="owl-carousel homepage-slides text-center"> 
-      <!-- Slider item1 start-->
-      <div class="single-slide-item slider-overlay slide-bg-1">
-        <div class="item-table">
-          <div class="item-tablecell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 offset-lg-1">
-                  <h3 style="font-size: 45px;">We deliver</h3>
-                  <h2 style="font-size: 60px;">CARS & SUVS</h2>
-                  <p style="font-size: 35px;">Nationwide #1-rated auto transporter</p>
-                  <a href="#" class="wshipping-button slide-btn">Free Quote</a> 
-                  <a href="tel:(610) 982-1101" class="wshipping-button slide-btn" style="margin-left: 8px; background-color: blue; ">Call Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slider item1 end--> 
-      
-      <!-- Slider item2 start-->
-      <div class="single-slide-item slider-overlay slide-bg-2">
-        <div class="item-table">
-          <div class="item-tablecell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 offset-lg-1">
-                  <h3 style="font-size: 45px;">We deliver</h3>
-                  <h2 style="font-size: 60px;">BOATS-RVS</h2>
-                  <p style="font-size: 35px;">Deliver your vehicles nationally on time with no hassle!</p>
-                  <a href="#" class="wshipping-button slide-btn">Free Quote</a> 
-                  <a href="tel:(610) 982-1101" class="wshipping-button slide-btn" style="margin-left: 8px; background-color: blue; ">Call Now</a>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slider item2 end--> 
+    <!-- Carousel Start -->
+    <section id="section">
+      <div id="one" class="bg visible" style="filter: brightness(40%);"></div>
+      <div id="two" class="bg" style="filter: brightness(40%);"></div>
+      <div id="three" class="bg" style="filter: brightness(40%);"></div>
 
-      <!-- Slider item2 start-->
-      <div class="single-slide-item slider-overlay slide-bg-3">
-        <div class="item-table">
-          <div class="item-tablecell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 offset-lg-1">
-                  <h3 style="font-size: 45px;">We deliver</h3>
-                  <h2 style="font-size: 60px;">MOTORCYCLES</h2>
-                  <p style="font-size: 35px;">Deliver your vehicles nationally on time with no hassle!</p>
-                  <a href="#" class="wshipping-button slide-btn">Free Quote</a> 
-                  <a href="tel:(610) 982-1101" class="wshipping-button slide-btn" style="margin-left: 8px; background-color: blue; ">Call Now</a>
-                
-                </div>
+      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+          <div class="container">
+              <div class="row justify-content-start">
+                  <div class="col-10 col-lg-8">
+                      <h1 class="changing-text">
+                          WE DELIVER
+                          <div class="texts-container">
+                              <span>
+                                  CARS<br />
+                                  SUVS<br />
+                                  MOTORCYCLES<br />
+                                  BOATS-RVS
+                              </span>
+                          </div>
+                      </h1>
+
+                      <p class="fs-5 fw-medium text-white mb-3 mt-2 pb-2">Nationwide #1-rated auto transporter!</p>
+                      <!--                                 
+                      <h5 class="text-white text-uppercase mb-3 animated slideInDown">WE DELIVER </h5>
+                      <h1 class="display-3 text-white animated slideInDown mb-4">CARS, SUVS, RVS, MOTORCYCLES, HEAVY EQUIPMENT, BOATS</h1>
+                      <p class="fs-5 fw-medium text-white mb-4 pb-2">PEACE OF MIND</p>
+                       -->
+                      <a href="https://apps.msgplane.com/quote/nat" class="btn btn-danger py-md-3 px-md-5 me-3 animated slideInLeft">GET A QUOTE</a>
+                      <a href="tel:(610) 982-1101" style="margin-left: 10px;" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">CALL NOW</a>
+                          
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
+          <!-- 
+          <div class="section_contact">
+          <script data-b24-form="inline/3/ykm2x9" data-skip-moving="true" >
+              (function(w,d,u){
+              var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+              var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+              })(window,document,'https://cdn.bitrix24.com/b22106331/crm/form/loader_3.js');
+          </script>
+          </div>
+           -->
       </div>
-      <!-- Slider item2 end--> 
-    </div>
-  </div>
-  <!-- Slider End --> 
+  </section>
+
+  <!-- Carousel End -->
   
     <!-- Comments &amp; Testimonials Start -->
     <div class="wshipping-content-block news-testimonial-block">
       <div class="container wow fadeInUp">
   <!-- Testimonial Carousel -->
   
-  <section id="testimonials">
-    <!--heading--->
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+	<div class="container">
     <div class="testimonial-heading">
-        <h1>Our Clients Say!</h1>
+      <h1>Our Clients Say!</h1>
+  </div>
 
-        
-    </div>
-    <!--testimonials-box-container------>
-    <div class="testimonial-box-container">
-        <!--BOX-1-------------->
-        <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-                <!--profile----->
-                <div class="profile">
-                    <!--img---->
-                    <div class="profile-img">
-                        <img src="assets/images/client.png" />
-                    </div>
-                    <!--name-and-username-->
-                    <div class="name-user">
-                        <strong>Enmanuel Reyes</strong>
-                        <span>Sep 06, 2022</span>
-                    </div>
-                </div>
-                <!--reviews------>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="assets/images/part4.png" alt="">
+                <p>I contacted United Freeway Transport and I dealt with Jason to transport a car from NJ to TX, Jason went out of his way to find a driver but the pickup timing didn’t fit our schedule and decided to drive the car instead, Jason was polite and courteous all the time, I would contact him again without hesitation if the need arises, thank you.</p>
+              </div>
+              <div class="testimonial-name">
                 <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><!--Empty star-->
-                </div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                GUS NEMRI</div>
             </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="assets/images/part4.png" alt="">
+                <p>An amazingly smooth car transport process. Allan Gray was extremely helpful at walking me through the ins and outs of delivering my daughter’s car across the country. Way too many delivery companies make empty promises to get your business. United Freeway and Allan specifically followed through on exactly what they promised. I can’t recommend them enough.</p>
+              </div>
+              <div class="testimonial-name">
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                MARK DEITELBAUM</div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="assets/images/part5.png" alt="">
                 <p>Jason helped me out and was very professional and patient. He kept me up to date on all news as soon as he received the information, and overall made this a super easy process for me. I needed my car transported from NY to NC. I called on Monday and by Tuesday my car was actually loaded and picked up. I would definitely recommend.</p>
-            </div>
-        </div>
-        <!--BOX-2-------------->
-        <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-                <!--profile----->
-                <div class="profile">
-                    <!--img---->
-                    <div class="profile-img">
-                        <img src="assets/images/client.png" />
-                    </div>
-                    <!--name-and-username-->
-                    <div class="name-user">
-                        <strong>Hester Mclean</strong>
-                        <span>Jan 17, 2022</span>
-                    </div>
-                </div>
-                <!--reviews------>
+              </div>
+              <div class="testimonial-name">
                 <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><!--Empty star-->
-                </div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                ENMAUEL REYES</div>
             </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="assets/images/part5.png" alt="">
                 <p>My name is Hester McLean. I can't say enough what a wonderful transport service United freeway transport is.They done such a great job moving My grandson car to Florida. They were a day early then when they was supose to get it there. The young man that transported was awesome.  I will always use them if I ever ship again.</p>
-            </div>
-        </div>
-        <!--BOX-3-------------->
-        <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-                <!--profile----->
-                <div class="profile">
-                    <!--img---->
-                    <div class="profile-img">
-                        <img src="assets/images/client.png" />
-                    </div>
-                    <!--name-and-username-->
-                    <div class="name-user">
-                        <strong>Michelle Quarles</strong>
-                        <span>May 11, 2022</span>
-                    </div>
-                </div>
-                <!--reviews------>
+              </div>
+              <div class="testimonial-name">
                 <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                HESTER MCLEAN</div>
             </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
-                <p>Simon Jones helped me through the process. I had previously hired another company and they flaked the day of.As You can imagine I was upset and nervous to use someone else but I had to transport my vehicles.
-  
-                  I scrambled to find someone else and Simon found Hyak for me within a couple days. They were picked up on Saturday and delivered Wednesday morning.</p>
-            </div>
-        </div>
-        <!--BOX-4-------------->
-        <div class="testimonial-box">
-            <!--top------------------------->
-            <div class="box-top">
-                <!--profile----->
-                <div class="profile">
-                    <!--img---->
-                    <div class="profile-img">
-                        <img src="assets/images/client.png" />
-                    </div>
-                    <!--name-and-username-->
-                    <div class="name-user">
-                        <strong>Clover Butte</strong>
-                        <span>Aug 12, 2022</span>
-                    </div>
-                </div>
-                <!--reviews------>
+            <!--END OF TESTIMONIAL 4 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="assets/images/part8.png" alt="">
+                <p>Great service !
+                  Prompt, reliable and great communication! The experience overall was amazing and all my questions were answered with honesty. The quote given was exactly what I paid !</p>
+              </div>
+              <div class="testimonial-name">
                 <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                IVONNE JIME</div>
             </div>
-            <!--Comments---------------------------------------->
-            <div class="client-comment">
-                <p>Max, my broker at United Freeway, was polite, professional and very accommodating. After the first driver’s truck broke down, he worked hard to find a new shipper, keeping me updated via text. My Lexus was delivered to its out-of-state destination promptly and in perfect condition. The whole process went better than expected. Thanks again, Max, for going above and beyond my expectations!
-  
-                </p>
+            <!--END OF TESTIMONIAL 5 -->
+
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="assets/images/part8.png" alt="">
+                <p>Excellent service
+                  Charlie helped me a lot and ensures a smooth service. The driver Alex was also extremely helpful and delivered my car very fast directly to my door. I really appreciate the business.</p>
+              </div>
+              <div class="testimonial-name">
+                <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                ABDULLAH AL MAMUN</div>
             </div>
+            <!--END OF TESTIMONIAL 5 -->
+          </div>
         </div>
-    </div>
-  </section>
-  
+      </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+
   <!-- / Testimonial Carousel -->
       </div>
     </div>
@@ -448,93 +595,147 @@
                   <div class="hiw-cta-wrap flex-grid" style="display: block; float: right;"> 
                   <a href="https://apps.msgplane.com/quote/nat" id="Get A Quote - Desktop - In Content" class="with-mb-24 js-animate-cta button-primary button-hover-effect tg-pcta-incontent cta-animation"> 
                   <span class="button-text">Get an instant quote</span> </a> 
-                   </div> </div>
+        </div> </div>
                    
   <!-- How do I book Start -->
+  <div class="space40"></div>
 
-  <!-- Service start -->
+  <!-- Why Choose start -->
   <div class="wshipping-content-block">
     <div class="container">
+      <h3 class="heading3-border text-uppercase">Why you should book with one of the top-rated auto transport companies:</h3>
+
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3">
-          <div class="section-title wow fadeInUp">
-            <h2>Our Services</h2>
-            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-lg-4">
-          <div class="single-service-item wow fadeInUp">
-            <div class="service-item-bg service-bg-1"></div>
-            <div class="service-content">
-              <h4>Door-to-door Transport</h4>
-              <p>United Freeway Transportation is known for safe and secure door-to-door auto transportation</p>
-              <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
-              <div class="location_map"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="single-service-item wow fadeInUp">
-            <div class="service-item-bg service-bg-2"></div>
-            <div class="service-content">
-              <h4>Open Auto Transport</h4>
-              <p>United Freeway Transportation has years of open car shipping experience</p>
-              <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
-              <div class="location_map"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="single-service-item wow fadeInUp">
-            <div class="service-item-bg service-bg-3"></div>
-            <div class="service-content">
-              <h4>Enclosed Car Transport</h4>
-              <p>Enclosed auto transport protects your car during shipping</p>
-              <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
-              <div class="location_map"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-12 col-lg-4">
-          <div class="single-service-item wow fadeInUp">
-            <div class="service-item-bg service-bg-4"></div>
-            <div class="service-content">
-              <h4>Motorcycle Shipping</h4>
-              <p>United Freeway Transportation ships motorcycles of all types across all 50 states</p>
-              <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
-              <div class="location_map"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="single-service-item wow fadeInUp">
-            <div class="service-item-bg service-bg-5"></div>
-            <div class="service-content">
-              <h4>Car Collectors</h4>
-              <p>Classic car transport and exotic car transport from United Freeway Transportation</p>
-              <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
-              <div class="location_map"><i class="fa fa-plus"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="single-service-item wow fadeInUp">
-            <div class="service-item-bg service-bg-6"></div>
-            <div class="service-content">
-              <h4>Car Resellers Shipping</h4>
-              <p>United Freeway Auto Transport delivers resold cars to new owners</p>
-              <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
-              <div class="location_map"><i class="fa fa-plus"></i></div>
-            </div>
+        <div class="col-12 col-lg-6 wow fadeInLeft"> <img src="assets/images/slide2.jpeg" alt=""/> </div>
+        <div class="col-12 col-lg-6">
+          <div class="why-choose-us wow fadeInRight">
+            <div class="why-choose-us-icon"> <i class="fas fa-people-group"></i></i><span> Dedicated advisors</span> </div>
+            <div class="why-choose-us-icon"> <i class="fa fa-shield"></i><span> Insurance coverage </span></div>
+            <div class="why-choose-us-icon"> <i class="far fa-heart"></i><span> 13K auto carriers</span> </div>
+            <div class="why-choose-us-icon"> <i class="fa fa-dollar"></i><span> Zero upfront payment </span></div>
+            <div class="why-choose-us-icon"> <i class="fas fa-star"></i><span> Top rated company </span></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Service End --> 
+  <!-- why choose End --> 
+
+ <!-- Get Quote start -->
+ <div class="wshipping-content-block home-quote">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 wow fadeInLeft">
+        <h2>GET A FREE QUOTE</h2>
+        <!-- <h6>we always use best & fastest fleets</h6> -->
+        <a href="#" class="wshipping-button cta-btn">Get a Quote</a> 
+        <!-- <div class="quote-form">
+          <form data-toggle="validator" action="index.html">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" data-error="Please enter name field." id="inputName" placeholder="Full Name" type="text" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="DestinationFrom" placeholder="Destination From" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="DestinationTo" placeholder="Destination To" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="ShippingType" placeholder="Shipping Type" required />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="form-group">
+                  <div class="datepicker-group">
+                    <input type="text" class="form-control datetimepicker1" placeholder="Date" />
+                    <div class="datepicker-icon"><i class="fa fa-calendar-alt"></i></div>
+                  </div>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea class="form-control text-area" data-error="Please enter Message." id="textMessage" placeholder="Message" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <button class="wshipping-button cta-btn" type="submit">Send us quote</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Get quote End --> 
+
+<!-- Counter start -->
+<div class="wshipping-content-block counter-section">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="counter-block"> <span class="counter-icon"><i class="fa fa-folder-open"></i></span>
+          <p><span class="counter" data-count="2875">2,875</span> Vehicles Delivered</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="counter-block"> <span class="counter-icon"><i class="fas fa-users"></i></span>
+          <p><span class="counter" data-count="786">0</span> 5-star reviews</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="counter-block"> <span class="counter-icon"><i class="fa fa-truck"></i></span>
+          <p><span class="counter" data-count="15197">15.197</span>Drivers </p>
+        </div>
+      </div>
+      <!-- <div class="col-12 col-sm-6 col-lg-3">
+        <div class="counter-block"> <span class="counter-icon"><i class="fa fa-male"></i></span>
+          <p><span class="counter" data-count="800">0</span> Individual drivers</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- Counter End --> 
+
   
   <!-- we peovide start -->
   <div class="wshipping-content-block provided-block text-center">
@@ -555,26 +756,7 @@
   </div>
   <!-- we provide end --> 
   
-  <!-- Why Choose start -->
-  <div class="wshipping-content-block">
-    <div class="container">
-      <h3 class="heading3-border text-uppercase">Why you should book with one of the top-rated auto transport companies:</h3>
 
-      <div class="row">
-        <div class="col-12 col-lg-6 wow fadeInLeft"> <img src="assets/images/slide2.jpeg" alt=""/> </div>
-        <div class="col-12 col-lg-6">
-          <div class="why-choose-us wow fadeInRight">
-            <div class="why-choose-us-icon"> <i class="fas fa-people-group"></i></i> Dedicated advisors </div>
-            <div class="why-choose-us-icon"> <i class="fa fa-shield"></i> Insurance coverage </div>
-            <div class="why-choose-us-icon"> <i class="far fa-heart"></i> 13K auto carriers </div>
-            <div class="why-choose-us-icon"> <i class="fa fa-dollar"></i> Zero upfront payment </div>
-            <div class="why-choose-us-icon"> <i class="fas fa-star"></i> Top rated company </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- why choose End --> 
   
   <!-- Service process start -->
   <div class="wshipping-content-block service-process">
@@ -589,11 +771,11 @@
       </div>
       <div class="process-row">
         <div class="process-step1">
-          <div class="process-icon1"> <span>1</span> <img src="assets/images/step1.png" alt=""/> </div>
+          <div class="process-icon1 media_main"> <span>1</span> <img src="assets/images/step1.png" alt=""/> </div>
           <p>Quote and book your order</p>
         </div>
         <div class="process-step1">
-          <div class="process-icon1"> <span>2</span> <img src="assets/images/step2.png" alt=""/> </div>
+          <div class="process-icon1 media_main_two"> <span>2</span> <img src="assets/images/step2.png" alt=""/> </div>
           <p>Your vehicle is picked up</p>
         </div>
         <div class="process-step1">
@@ -609,121 +791,7 @@
   </div>
   <!-- service process start --> 
   
-  <!-- Get Quote start -->
-  <div class="wshipping-content-block home-quote">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 wow fadeInLeft">
-          <h2>GET A FREE QUOTE</h2>
-          <!-- <h6>we always use best & fastest fleets</h6> -->
-          <a href="#" class="wshipping-button cta-btn">Get a Quote</a> 
-          <!-- <div class="quote-form">
-            <form data-toggle="validator" action="index.html">
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <input class="form-control" data-error="Please enter name field." id="inputName" placeholder="Full Name" type="text" required />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" required />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="DestinationFrom" placeholder="Destination From" required />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="DestinationTo" placeholder="Destination To" required />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="ShippingType" placeholder="Shipping Type" required />
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="form-group">
-                    <div class="datepicker-group">
-                      <input type="text" class="form-control datetimepicker1" placeholder="Date" />
-                      <div class="datepicker-icon"><i class="fa fa-calendar-alt"></i></div>
-                    </div>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <textarea class="form-control text-area" data-error="Please enter Message." id="textMessage" placeholder="Message" required></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <button class="wshipping-button cta-btn" type="submit">Send us quote</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Get quote End --> 
-  
-  <!-- Counter start -->
-  <div class="wshipping-content-block counter-section">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="counter-block"> <span class="counter-icon"><i class="fa fa-folder-open"></i></span>
-            <p><span class="counter" data-count="2875">2,875</span> Vehicles Delivered</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="counter-block"> <span class="counter-icon"><i class="fas fa-users"></i></span>
-            <p><span class="counter" data-count="786">0</span> 5-star reviews</p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="counter-block"> <span class="counter-icon"><i class="fa fa-truck"></i></span>
-            <p><span class="counter" data-count="15197">15.197</span>Drivers </p>
-          </div>
-        </div>
-        <!-- <div class="col-12 col-sm-6 col-lg-3">
-          <div class="counter-block"> <span class="counter-icon"><i class="fa fa-male"></i></span>
-            <p><span class="counter" data-count="800">0</span> Individual drivers</p>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-  <!-- Counter End --> 
-  
+ 
 
   
 <!-- Our client start -->
@@ -747,7 +815,90 @@
     </div>
   </div>
   <!-- Our client end --> 
-  <div class="space40"></div>
+
+    <!-- Service start -->
+    <div class="wshipping-content-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-3">
+            <div class="section-title wow fadeInUp">
+              <h2>Our Services</h2>
+              <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="single-service-item wow fadeInUp">
+              <div class="service-item-bg service-bg-1"></div>
+              <div class="service-content">
+                <h4>Door-to-door Transport</h4>
+                <p>United Freeway Transportation is known for safe and secure door-to-door auto transportation</p>
+                <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
+                <div class="location_map"><i class="fa fa-plus"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="single-service-item wow fadeInUp">
+              <div class="service-item-bg service-bg-2"></div>
+              <div class="service-content">
+                <h4>Open Auto Transport</h4>
+                <p>United Freeway Transportation has years of open car shipping experience</p>
+                <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
+                <div class="location_map"><i class="fa fa-plus"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="single-service-item wow fadeInUp">
+              <div class="service-item-bg service-bg-3"></div>
+              <div class="service-content">
+                <h4>Enclosed Car Transport</h4>
+                <p>Enclosed auto transport protects your car during shipping</p>
+                <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
+                <div class="location_map"><i class="fa fa-plus"></i></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-lg-4">
+            <div class="single-service-item wow fadeInUp">
+              <div class="service-item-bg service-bg-4"></div>
+              <div class="service-content">
+                <h4>Motorcycle Shipping</h4>
+                <p>United Freeway Transportation ships motorcycles of all types across all 50 states</p>
+                <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
+                <div class="location_map"><i class="fa fa-plus"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="single-service-item wow fadeInUp">
+              <div class="service-item-bg service-bg-5"></div>
+              <div class="service-content">
+                <h4>Car Collectors</h4>
+                <p>Classic car transport and exotic car transport from United Freeway Transportation</p>
+                <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
+                <div class="location_map"><i class="fa fa-plus"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="single-service-item wow fadeInUp">
+              <div class="service-item-bg service-bg-6"></div>
+              <div class="service-content">
+                <h4>Car Resellers Shipping</h4>
+                <p>United Freeway Auto Transport delivers resold cars to new owners</p>
+                <a href="" title="" class="readmore-btn">Read more <i class="fa fa-angle-right"></i></a>
+                <div class="location_map"><i class="fa fa-plus"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End --> 
 
 
   <!-- FAQ Starts -->
@@ -830,11 +981,11 @@
             <div class="footer-wiz footer-menu">
               <h3 class="footer-wiz-title">Quick Links</h3>
               <ul>
-                <li><a href="how-it-works.html">How it works?</a></li>
+                <li><a href="/how-it-works/">How it works?</a></li>
                 <li><a href="#">For individuals</a></li>
                 <li><a href="#">For businesses</a></li>
-                <li><a href="why-us.html">Why us?</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="/why-us/">Why us?</a></li>
+                <li><a href="/contact-us/">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -842,12 +993,12 @@
             <div class="footer-wiz footer-menu">
               <h3 class="footer-wiz-title">Useful Links</h3>
               <ul>
-                <li><a href="door-to-door.html">Door-to-door transport</a></li>
-                <li><a href="open-car-transport.html">Open car transport</a></li>
-                <li><a href="enclosed-auto-transport.html">Enclosed auto transport</a></li>
-                <li><a href="motorcycle-shipping.html">Motorcycle shipping</a></li>
-                <li><a href="car-buyers-auto-transport.html">Online car buyers</a></li>
-                <li><a href="students-auto-transport.html">College students</a></li>
+                <li><a href="/door-to-door/">Door-to-door transport</a></li>
+                <li><a href="/open-car-transport/">Open car transport</a></li>
+                <li><a href="/enclosed-auto-transport/">Enclosed auto transport</a></li>
+                <li><a href="/motorcycle-shipping/">Motorcycle shipping</a></li>
+                <li><a href="/car-buyers-auto-transport/">Online car buyers</a></li>
+                <li><a href="/students-auto-transport/">College students</a></li>
               </ul>
             </div>
           </div>
@@ -951,6 +1102,8 @@
 
 <!-- Active JS --> 
 <script src="assets/js/active.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/main1.js"></script>
 <script type="text/javascript">
         function showIt() {
             document.getElementById("hid").style.visibility = "visible";
@@ -980,6 +1133,7 @@
             next.classList.add('visible');
         }, interval)
     </script>  
+    
 
 <script>
   function hidex() {

@@ -64,7 +64,7 @@ body {
 	color: #444444;
 }
 body.box-style {
-	background: url(assets/images/body-bg.png) repeat left top #fff;
+	background: url(../assets/images/body-bg.png) repeat left top #fff;
 }
 body.box-style .main-wrapper {
 	margin: 0 auto;
@@ -72,6 +72,81 @@ body.box-style .main-wrapper {
 	box-shadow: 0px 0px 15px 2px rgba(100,100,100,0.9);
 	background-color: #fff;
 }
+
+
+/* Testi start */
+.shadow-effect {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	text-align: center;
+	border: 1px solid #ececec;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+#customers-testimonials .shadow-effect p {
+	font-family: inherit;
+	font-size: 17px;
+	line-height: 1.5;
+	margin: 0 0 17px 0;
+	font-weight: 300;
+}
+.testimonial-name {
+	margin: -17px auto 0;
+	display: table;
+	width: auto;
+	background: #3190e7;
+	padding: 9px 35px;
+	border-radius: 12px;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+}
+#customers-testimonials .item {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 80px;
+	opacity: 0.2;
+	-webkit-transform: scale3d(0.8, 0.8, 1);
+	transform: scale3d(0.8, 0.8, 1);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+.owl-carousel .owl-item img {
+	transform-style: preserve-3d;
+	max-width: 140px;
+	margin: 0 auto 5px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+	background: #3190e7;
+	transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+	display: inline-block;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+	background: #3190e7;
+	display: inline-block;
+	height: 20px;
+	margin: 0 2px 5px;
+	transform: translate3d(0px, -50%, 0px) scale(0.3);
+	transform-origin: 50% 50% 0;
+	transition: all 250ms ease-out 0s;
+	width: 20px;
+  border-radius: 50%;
+}
+/* testi end */
 
 /* Team */
 
@@ -158,6 +233,7 @@ body.box-style .main-wrapper {
 .price-item a.btn-slide:hover span {
     background: var(--secondary);
 }
+
 
 /* Moving text */
 .moving-text{width:100%}.moving-text .blue,.moving-text .green,.moving-text .red{font-weight:700}.moving-text .red{color:red}.moving-text .blue{color:#00a1ef}.moving-text .green{color:#029046}*,:after,:before{box-sizing:border-box}
@@ -410,137 +486,137 @@ a#skiptocontent:active, a#skiptocontent:focus {
 /*-------------- Background Css ------------------*/
 
 .slide-bg-1 {
-	background-image: url(assets/images/slide1.jpg);
+	background-image: url(../assets/images/slide1.jpg);
 }
 .slide-bg-2 {
-	background-image: url(assets/images/slide2.jpeg);
+	background-image: url(../assets/images/slide2.jpeg);
 }
 .slide-bg-3 {
-	background-image: url(assets/images/slide3.jpg);
+	background-image: url(../assets/images/slide3.jpg);
 }
 .service-bg-1 {
-	background-image: url(assets/images/service-bg-1.jpg)
+	background-image: url(../assets/images/service-bg-1.jpg)
 }
 .service-bg-2 {
-	background-image: url(assets/images/service-bg-2.jpg)
+	background-image: url(../assets/images/service-bg-2.jpg)
 }
 .service-bg-3 {
-	background-image: url(assets/images/service-bg-3.jpg)
+	background-image: url(../assets/images/service-bg-3.jpg)
 }
 .service-bg-4 {
-	background-image: url(assets/images/service-bg-4.jpg)
+	background-image: url(../assets/images/service-bg-4.jpg)
 }
 .service-bg-5 {
-	background-image: url(assets/images/service-bg-5.jpg)
+	background-image: url(../assets/images/service-bg-5.jpg)
 }
 .service-bg-6 {
-	background-image: url(assets/images/service-bg-6.jpg)
+	background-image: url(../assets/images/service-bg-6.jpg)
 }
 .home-quote {
-	background-image: url(assets/images/banner-quote1.jpeg);
+	background-image: url(../assets/images/banner-quote1.jpeg);
 }
 .provided-block {
-	background-image: url(assets/images/cars.jpg);
+	background-image: url(../assets/images/cars.jpg);
 }
 .testimonial-style2 {
-	background-image: url(assets/images/we-provide-bg.jpg);
+	background-image: url(../assets/images/we-provide-bg.jpg);
 }
 .get-quote {
-	background-image: url(assets/images/get-quote-bg2.jpg);
+	background-image: url(../assets/images/get-quote-bg2.jpg);
 }
 .blog-bg-1 {
-	background-image: url(assets/images/service-bg-1.jpg)
+	background-image: url(../assets/images/service-bg-1.jpg)
 }
 .blog-bg-2 {
-	background-image: url(assets/images/blog-bg-2.jpg)
+	background-image: url(../assets/images/blog-bg-2.jpg)
 }
 .blog-bg-3 {
-	background-image: url(assets/images/blog-bg-3.jpg)
+	background-image: url(../assets/images/blog-bg-3.jpg)
 }
 .related-blog-bg-1 {
-	background-image: url(assets/images/air-single-gallery3.jpg)
+	background-image: url(../assets/images/air-single-gallery3.jpg)
 }
 .related-blog-bg-2 {
-	background-image: url(assets/images/air-single-gallery1.jpg)
+	background-image: url(../assets/images/air-single-gallery1.jpg)
 }
 .counter-section {
-	background-image: url(assets/images/counter-section-bg.jpg)
+	background-image: url(../assets/images/counter-section-bg.jpg)
 }
 .inner-bg-1 {
-	background-image: url(assets/images/door-to-door-transport.jpg);
+	background-image: url(../assets/images/door-to-door-transport.jpg);
 }
 .inner-bg-how {
-	background-image: url(assets/images/how.jpg);
+	background-image: url(../assets/images/how.jpg);
 }
 .inner-bg-opencar {
-	background-image: url(assets/images/open-banner.jpeg);
+	background-image: url(../assets/images/open-banner.jpeg);
 }
 
 .inner-bg-student {
-	background-image: url(assets/images/student-banner.jpg);
+	background-image: url(../assets/images/student-banner.jpg);
 }
 .inner-bg-online {
-	background-image: url(assets/images/online-banner.jpg);
+	background-image: url(../assets/images/online-banner.jpg);
 }
 .inner-bg-moto {
-	background-image: url(assets/images/moto-banner.jpg);
+	background-image: url(../assets/images/moto-banner.jpg);
 }
 .inner-bg-snow {
-	background-image: url(assets/images/snow-banner.jpg);
+	background-image: url(../assets/images/snow-banner.jpg);
 }
 .inner-bg-classic {
-	background-image: url(assets/images/Classic-Car-Auctions.jpg);
+	background-image: url(../assets/images/Classic-Car-Auctions.jpg);
 }
 .inner-bg-dealer {
-	background-image: url(assets/images/dealer-banner.jpg);
+	background-image: url(../assets/images/dealer-banner.jpg);
 }
 .inner-bg-rental {
-	background-image: url(assets/images/rental.webp);
+	background-image: url(../assets/images/rental.webp);
 }
 .inner-bg-review {
-	background-image: url(assets/images/reviews.webp);
+	background-image: url(../assets/images/reviews.webp);
 }
 .inner-bg-military {
-	background-image: url(assets/images/military-bg.jpg);
+	background-image: url(../assets/images/military-bg.jpg);
 }
 .testimonial-img-bg {
-	background-image: url(assets/images/client.png);
+	background-image: url(../assets/images/client.png);
 }
 .blog-image-1 {
-	background-image: url(assets/images/blog-image-1.jpg);
+	background-image: url(../assets/images/blog-image-1.jpg);
 }
 .blog-image-2 {
-	background-image: url(assets/images/blog-image-2.jpg);
+	background-image: url(../assets/images/blog-image-2.jpg);
 }
 .blog-image-3 {
-	background-image: url(assets/images/blog-image-3.jpg);
+	background-image: url(../assets/images/blog-image-3.jpg);
 }
 .blog-image-4 {
-	background-image: url(assets/images/blog-image-4.jpg);
+	background-image: url(../assets/images/blog-image-4.jpg);
 }
 .blog-image-5 {
-	background-image: url(assets/images/blog-image-5.jpg);
+	background-image: url(../assets/images/blog-image-5.jpg);
 }
 .blog-image-6 {
-	background-image: url(assets/images/blog-image-6.jpg);
+	background-image: url(../assets/images/blog-image-6.jpg);
 }
 .blog-image-7 {
-	background-image: url(assets/images/blog-image-7.jpg);
+	background-image: url(../assets/images/blog-image-7.jpg);
 }
 .blog-image-8 {
-	background-image: url(assets/images/blog-image-8.jpg);
+	background-image: url(../assets/images/blog-image-8.jpg);
 }
 .community-bg-1 {
-	background-image: url(assets/images/Coconut-Shells.jpg);
+	background-image: url(../assets/images/Coconut-Shells.jpg);
 }
 .community-bg-2 {
-	background-image: url(assets/images/jute-fiber.jpg);
+	background-image: url(../assets/images/jute-fiber.jpg);
 }
 .community-bg-3 {
-	background-image: url(assets/images/prawn.jpg);
+	background-image: url(../assets/images/prawn.jpg);
 }
 .community-bg-4 {
-	background-image: url(assets/images/fruits.jpg);
+	background-image: url(../assets/images/fruits.jpg);
 }
 /*-------------- Preloader Css ------------------*/
 
@@ -655,7 +731,7 @@ header:after {
 }
 .top-contact a {
 	display: inline-block;
-	background: url(assets/images/separator.png) repeat-y right top;
+	background: url(../assets/images/separator.png) repeat-y right top;
 	padding: 0px 15px 2px 12px;
 	line-height: 14px;
 }
@@ -1050,7 +1126,7 @@ header:after {
 }
 .wshipping-button.slide-btn {
 	margin-top: 20px;
-	font-size: 25px;
+	font-size: 19px;
 }
 .wshipping-button.slide-btn1 {
 	margin-top: 10px;
@@ -1114,7 +1190,7 @@ header:after {
 /*-------------- Section Css ------------------*/
 
 .wshipping-content-block {
-	padding: 60px 0px;
+	padding: 40px 0px;
 	background-color: #fff;
 }
 .section-title {
@@ -3314,7 +3390,7 @@ ul.bullet-list li:before {
 	color: #eb0028;
 }
 .customer-login {
-	background-image: url(assets/images/single-blog-pic1.jpg);
+	background-image: url(../assets/images/single-blog-pic1.jpg);
 	min-height: 400px;
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -3409,10 +3485,10 @@ ul.bullet-list li:before {
 	z-index:1;
 }
 .checkbox input[type=checkbox].css-checkbox:checked + label.css-label {
-	background-image: url(assets/images/checkbox2.png);
+	background-image: url(../assets/images/checkbox2.png);
 }
 .checkbox label.css-label {
-	background-image: url(assets/images/checkbox.png);
+	background-image: url(../assets/images/checkbox.png);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -4360,7 +4436,7 @@ h1.tanks-message {
 /********************** Coming Soon **********************/
 
 .coming-soon {
-	background-image: url(assets/images/coming-soon.jpg);
+	background-image: url(../assets/images/coming-soon.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4593,3 +4669,94 @@ img.float-right {
 	top: 0px;
 	z-index: 2;
 } */
+
+
+
+@media (max-width: 468px) {
+	.item-tablecell h2 {
+		font-size: 30px !important;
+	}
+	.why-choose-us .why-choose-us-icon {
+		top: 45px;
+	}
+	.home-quote h2 {
+		text-align: center;
+		font-size: 24px;
+		margin-top: 22px;
+	}
+	.wshipping-button.cta-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.why-choose-us-icon {
+		z-index: 100;
+	}
+	.changing-text {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 768px) {
+	a.header_number{
+		font-size: 20px !important;
+		color: #fff !important;
+	} 
+	.process-row {
+		display: flex !important;
+		justify-self: center !important;
+		align-items: center !important;
+		flex-flow: column !important;
+	}
+	.media_main {
+		margin-left: 40px;
+	}
+	.media_main_two {
+		margin-left: 20px;
+	}
+	.row {
+		display: block !important;
+		margin: 0 auto;
+	}
+	.col-6 {
+		max-width: 100% !important;
+	}
+	.process-icon1 {
+		width: 120px;
+		height: 120px;
+	}
+	.process-step1 {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.changing-text {
+        padding-top: 180px;
+    }
+	.why-choose-us .why-choose-us-icon {
+		top: 45px;
+	}
+	.wshipping-button.slide-btn1 {
+		width: 100%;
+		text-align: center;
+	}
+	.fadeInLeft h2 {
+		visibility: hidden;
+	}
+	.why-choose-us-icon span {
+		color: #fff;
+	}
+
+	.col-8 {
+		max-width: 100%;
+	}
+
+	.col-8 h1 {
+		font-size: 24px;
+	}
+
+	.col-4 img {
+		margin-right: 10px;
+	}
+}
+
+
