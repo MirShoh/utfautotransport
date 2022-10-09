@@ -55,10 +55,11 @@ Details of css section
 /*-------------- Google Font ------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /*-------------- Defalts Css ------------------*/
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif !important;
 	font-size: 14px;
 	line-height: 24px;
 	color: #444444;
@@ -105,7 +106,7 @@ body.box-style .main-wrapper {
 	text-align: center;
 	padding: 5px;
 	margin-bottom: 80px;
-	opacity: 0.2;
+	opacity: 1;
 	-webkit-transform: scale3d(0.8, 0.8, 1);
 	transform: scale3d(0.8, 0.8, 1);
 	-webkit-transition: all 0.3s ease-in-out;
@@ -312,7 +313,7 @@ h2.heading2-border:after, h3.heading3-border:after, h4.heading4-border:after {
 }
 .testimonial-heading{
     letter-spacing: 1px;
-    margin: 30px 0px;
+    margin: 10px 0px;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -2046,6 +2047,109 @@ span.counter-icon {
 	padding-left: 0px;
 }
 /*-------------- Home Page2 testimonials Css ------------------*/
+
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+
 
 .testimonial-style2 {
 	background-position: center;
@@ -4677,6 +4781,12 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 
 .pad-img {
 	margin-left: 28px;
+}
+
+@media (max-width: 375px) {
+	.changing-text {
+		font-size: 35px !important;
+	}
 }
 
 @media (max-width: 468px) {
