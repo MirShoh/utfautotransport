@@ -4812,6 +4812,9 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 	.changing-text {
 		font-size: 32px;
 	}
+	h2.heading2-border, h3.heading3-border, h4.heading4-border {
+		margin-top: 15px !important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -4860,7 +4863,7 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 		visibility: hidden;
 	}
 	.why-choose-us-icon span {
-		color: #fff;
+		color: #000;
 	}
 
 	.col-8 {
