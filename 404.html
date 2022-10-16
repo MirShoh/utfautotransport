@@ -1,57 +1,301 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="Bootstrap4, Multipurpose, responsive, Business, template,Shipping, Cargo, logistic, html5, css, javascript, web24service" />
-<meta name="author" content="web24service">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Title -->
-<title>W-shipping  - The World Class Bootstrap4 Multipurpose Shipping Cargo Logistic HTML5 Template</title>
-
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/png" href="../assets/images/fevicon.png">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-
-<!-- Font awesome CSS -->
-<link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
-
-<!-- Animate CSS -->
-<link rel="stylesheet" href="../assets/css/animate.min.css">
-
-<!-- OwlCarousel CSS -->
-<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-
-<!-- Magnific popup CSS -->
-<link rel="stylesheet" href="../assets/css/fancybox.min.css">
-
-<!-- chat CSS -->
-<link rel="stylesheet" href="../assets/css/chat.css">
-
-<!-- Slicknav CSS -->
-<link rel="stylesheet" href="../assets/css/slicknav.min.css">
-
-<!-- Date picker CSS -->
-<link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.min.css">
-
-<!-- Main CSS -->
-<link rel="stylesheet" href="../style.css">
-
-<!-- Responsive CSS -->
-<link rel="stylesheet" href="../assets/css/responsive.css">
-
-<!-- jQuery -->
-<script src="assets/js/jquery-3.4.1.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Bootstrap4, Multipurpose, responsive, Business, template,Shipping, Cargo, logistic, html5, css, javascript, web24service" />
+    <meta name="author" content="web24service">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title -->
+    <title>United Freeway Auto Transport </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    
+    <!-- OwlCarousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    
+    <!-- Magnific popup CSS -->
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    
+    <!-- chat CSS -->
+    <link rel="stylesheet" href="assets/css/chat.css">
+    
+    <!-- Slicknav CSS -->
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    
+    <!-- Date picker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="con-res.css">
+    <link rel="stylesheet" href="style-home.css">
+    <style>
+       .popup-box {
+                display: none;
+                position: fixed;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                top: 0;
+                left: 0;
+            }
+    
+            .popup-inner {
+                max-width: 370px;
+                min-height: 400px;
+                background: white;
+                border-radius: 25px;
+                padding: 15px;
+                margin: auto;
+                top: 25%;
+                position: relative;
+            }
+    
+    
+    
+            .popup-msg {
+                font-weight: bold;
+                color: black;
+                padding: 20px 20px 0 20px;
+            }
+    
+            .next-step-btn {
+                margin: 20px auto 0;
+                background: linear-gradient(rgb(204, 0, 0), rgb(130, 0, 0));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#015eab', endColorstr='#10276b');
+                border: none !important;
+                padding: 10px 40px !important;
+                color: #fff !important;
+                font-weight: bold;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+    
+            .transparent-layer {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: #000000;
+                opacity: 0.7;
+                overflow: hidden;
+    
+            }
+    
+    
+            i.fa-solid.fa-circle-xmark {
+                font-size: 30px;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+            }
+    
+            
+    
+            .changing-text {
+                text-transform: uppercase;
+                color: #fff;
+                font-family: verdana;
+                font-size: 50px;
+            }
+    
+            p.fs-5.fw-medium.text-white {
+              font-size: 24px;
+            }
+    
+            .texts-container {
+                display: inline-block;
+                height: 40px;
+                overflow: hidden;
+                color: #ffffff;
+                text-shadow: 0 0 10px rgb(0, 0, 0);
+            }
+    
+            .texts-container span {
+                display: block;
+                animation: moveUp 6s infinite;
+            }
+    
+            @keyframes moveUp {
+                0% {
+                    transform: translateY(0);
+                }
+    
+                25% {
+                    transform: translateY(-26%);
+                }
+    
+                50% {
+                    transform: translateY(-51%);
+                }
+    
+                75% {
+                    transform: translateY(-76%);
+                }
+    
+                100% {
+                    transform: translateY(0);
+                }
+            }
+    
+    
+    
+            .box .heading {
+                background: #FF3E41;
+                border-radius: 7px 7px 0px 0px;
+                padding: 10px;
+                color: #fff;
+                text-align: center;
+                font-family: "Rubik";
+            }
+    
+            .faqs {
+                padding: 0px 20px 20px;
+            }
+    
+            ::-webkit-details-marker {
+                float: right;
+                margin-top: 3px;
+            }
+    
+            details {
+                background: #ffff;
+                color: #000;
+                padding: 3px 20px;
+                border-radius: 7px;
+                margin-top: 20px;
+                font-family: "Rubik";
+                font-size: 18px;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+    
+            details summary {
+                outline: none;
+                background-color: #FF3E41;
+                border-radius: 3px;
+                padding-left: 8px;
+                padding: 10px 10px;
+            }
+    
+            p.text {
+                background-color: #fff;
+                padding-top: 15px;
+            }
+    
+            .section_contact {
+                position: absolute;
+                right: 220px;
+                width: 33%;
+            }
+    
+    
+            /* Background style */
+    
+            #section {
+                position: relative;
+                width: 100%;
+                /* 16:9 aspect ratio image bg */
+                height: 100vh;
+                background-size: cover;
+            }
+    
+            .bg {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                opacity: 0;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: all 1s linear;
+            }
+    
+            .content-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .content {
+                border: 1px solid rgb(242, 227, 12);
+                width: 60%;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 20px 40px;
+                border-radius: 3px;
+                color: white;
+                font-family: monospace;
+                font-size: 14px;
+                letter-spacing: 1.4px;
+                line-height: 1.4;
+            }
+    
+            .content h1 {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+    
+            #one {
+                background-image: url('assets/images/slide1.jpg');
+                background-size: 100% 100%;
+            }
+    
+            #two {
+                background-image: url('assets/images/slide2.jpeg');
+                background-size: 100% 100%;
+            }
+    
+            #three {
+                background-image: url('assets/images/slide3.jpg');
+                background-size: 100% 100%;
+            }
+    
+    
+    
+            .visible {
+                opacity: 1;
+            }
+    
+            .video {
+                margin-right: 10px;
+            }
+    
+     
+    </style>
+    
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    </head>
 
 <body>
 <!-- Main Wrapper Start -->
@@ -66,117 +310,94 @@
         and servicing all 50 states to assist with your auto shipping needs.</marquee>
 </div>
   
-   <header class="for-sticky"> 
-    <!-- Header top area start -->
-    <div class="header-top-area">
-      <div class="container">
-        <div class="row">
-            <a href="#"><i class="fa fa-envelope"></i> info@worldshipping.com</a> <a href="#"><i class="fa fa-phone"></i> +88 01911 837404</a> <a href="#"><i class="far fa-clock"></i> 9:00AM to 8:00PM</a> </div>
-          </div>
-          <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
-            <div class="top-menu">
-              <ul>
-                <li><a href="customer-login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                <li><a href="customer-register.html"><i class="fa fa-unlock-alt"></i> Registration</a></li>
-              </ul>
-            </div>
-            <div class="language">
-              <ul>
-                <li><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/flag-1.png" alt=""/> EN</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="" title=""><img src="../assets/images/flag-1.png" alt=""/> EN</a></li>
-                    <li><a href="" title=""><img src="../assets/images/flag-2.png" alt=""/> TR</a></li>
-                    <li><a href="" title=""><img src="../assets/images/flag-3.png" alt=""/> BR</a></li>
-                    <li><a href="" title=""><img src="../assets/images/flag-4.png" alt=""/> SR</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+<header class="for-sticky"> 
+  <!-- Header top area start -->
+  <div class="header-top-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <div class="top-contact"> <a href="#"><i class="fa fa-envelope"></i> admin@uftransportation.com</a> <a href="tel:(610) 982-1101"><i class="fa fa-phone"></i> (610) 982-1101</a> <a href="#"><i class="far fa-clock"></i> 9:00AM to 9:00PM</a> </div>
         </div>
+        <!-- <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+          <div class="top-menu">
+            <ul>
+              <li><a href="customer-login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+              <li><a href="customer-register.html"><i class="fa fa-unlock-alt"></i> Registration</a></li>
+            </ul>
+          </div>
+          <div class="language">
+            <ul>
+              <li><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/flag-1.png" alt=""/> EN</a>
+                <ul class="dropdown-menu">
+                  <li><a href="" title=""><img src="assets/images/flag-1.png" alt=""/> EN</a></li>
+                  <li><a href="" title=""><img src="assets/images/flag-2.png" alt=""/> TR</a></li>
+                  <li><a href="" title=""><img src="assets/images/flag-3.png" alt=""/> BR</a></li>
+                  <li><a href="" title=""><img src="assets/images/flag-4.png" alt=""/> SR</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div> -->
       </div>
     </div>
-    <!-- Header top area End --> 
-    
-    <!-- Header area start -->
-    <div class="header-area">
-      <div class="container"> 
-        <!-- Site logo Start -->
-        <div class="logo"> <a href="index.html"  ><img src="../assets/images/logo.png" alt="W-shipping"/></a> </div>
-        <!-- Site logo end -->
-        <div class="mobile-menu-wrapper"></div>
-        <!-- Search Start -->
-        <div class="dropdown header-search-bar">
-          <form action="index.html">
-            <span class="" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></span>
-            <input type="search" placeholder="kyewords.." class="dropdown-menu search-box">
-          </form>
-        </div>
-        <!-- Search End --> 
-        
-        <!-- Main menu start -->
-        <nav class="mainmenu">
-          <ul id="navigation">
-            <li><a href="#">Home</a>
-              <ul>
-                <li><a href="index.html">Home version 1</a></li>
-                <li><a href="index2.html">Home version 2</a></li>
-                <li><a href="index3.html">Box Style</a></li>
-                <li><a href="rtl-version.html">RTL Version</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Services</a>
-              <ul>
-                <li><a href="services.html">Service page</a></li>
-                <li><a href="single-services.html">Air Freight Shipping</a></li>
-                <li><a href="single-services.html">Ocean Freight Shipping</a></li>
-                <li><a href="single-services.html">Car Shipping</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Shipping</a>
-              <ul>
-                <li><a href="create-shipping.html">Create New Shipment</a></li>
-                <li><a href="current-shipment.html">Current Shipment list</a></li>
-                <li><a href="shipment-history.html">Shipment History</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Tracking</a>
-              <ul>
-                <li><a href="customer-login.html">Customer Login</a></li>
-                <li><a href="customer-register.html">Customer Register</a></li>
-                <li><a href="tracking.html">Tracking</a></li>
-                <li><a href="tracking-result.html">Your shipment progress</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Blog</a>
-              <ul>
-                <li><a href="blog.html">Blog left sidebar</a></li>
-                <li><a href="blog-another-page.html">Blog right sidebar</a></li>
-                <li><a href="single-blog.html">Single Blog</a></li>
-              </ul>
-            </li>
-            <li class="nav-active"><a href="#">pages</a>
-              <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="media.html">Media & Publications</a></li>
-                <li><a href="freight-gallery.html">Freight Gallery</a></li>
-                <li><a href="image-gallery.html">Image Gallery</a></li>
-                <li><a href="typography.html">Typography</a></li>
-                <li><a href="button-accordion.html">Button &amp; Accordion</a></li>
-                <li><a href="community.html">Shipping Community</a></li>
-                <li class="chaild-active"><a href="404.html">Error 404</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="coming-soon.html">Coming Soon</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contuct Us</a></li>
-          </ul>
-        </nav>
-        <!-- Main menu end --> 
-      </div>
+  </div>
+  <!-- Header top area End --> 
+  
+  <!-- Header area start -->
+  <div class="header-area">
+    <div class="container"> 
+      <!-- Site logo Start -->
+      <div class="logo"> <a href="index.html"><img src="assets/images/main-logo.png" style="width: 150px;" alt="United Freeway Auto Transport Logo"/></a> </div>
+      <!-- Site logo end -->
+      <div class="mobile-menu-wrapper"></div>
+      
+      <!-- Main menu start -->
+       <nav class="mainmenu">
+        <ul id="navigation">
+           <li class="nav"><a href="/how-it-works/">HOW IT WORKS?</a>
+          </li>
+          <li><a href="#">FOR INDIVIDUALS </a>
+            <ul>
+              <li><a href="#" style="background-color: #eb0028; color: white">We offer</a></li>
+              <li><a href="/door-to-door/">Door-to-door transport</a></li>
+              <li><a href="/open-car-transport/">Open car transport</a></li>
+              <li><a href="/enclosed-auto-transport/">Enclosed auto transport</a></li>
+              <li><a href="/motorcycle-shipping/">Motorcycle shipping</a></li>
+              
+              <li><a href="#" style="background-color: #eb0028; color: white">We serve</a></li>
+              <li><a href="/car-buyers-auto-transport/">Online car buyers</a></li>
+              <li><a href="/students-auto-transport/">College students</a></li>
+              <li><a href="/snowbirds-auto-transport/">Snowbirds</a></li>
+              <li><a href="/classic-cars-auto-transport/">Car collectors</a></li>
+              <li><a href="/car-resellers-auto-transport/">Car resellers shipping</a></li>
+              <li><a href="/military-auto-transport/">Military</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#">FOR BUSINESSES</a>
+            <ul>
+              <li><a href="/auto-dealers/">Auto dealerships</a></li>
+              <li><a href="/auto-auction-shipping/">Auto auctions</a></li>
+              <li><a href="/rental-car-companies/">Car rental companies</a></li>
+            </ul>
+          </li>
+          <li><a href="#">WHY US?</a>
+            <ul>
+              <li><a href="/reviews/">Reviews</a></li>
+              <li><a href="/about-us/">About us</a></li>
+              <li><a href="/our-team/">Our team</a></li>
+              <li><a href="/vision/">Vision and Mission</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact-us/">CONTACT</a></li>
+          <li><a href="tel:(610) 982-1101" class="header_number" style="font-size: 24px; color: #f70000;"><i class="fa fa-phone"></i> (610) 982-1101</a></li>
+        </ul>
+      </nav>
+      <!-- Main menu end --> 
     </div>
-    <!-- Header area End --> 
-  </header>
+  </div>
+  <!-- Header area End --> 
+</header>
   
   <!-- Breadcroumbs start -->
   <div class="wshipping-content-block wshipping-breadcroumb inner-bg-1">
@@ -201,7 +422,7 @@
         <div class="col-12 col-lg-10 offset-lg-1">
           <div class="error-section"> <img src="../assets/images/404.png" alt=""/>
             <h2>Page not found</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nesciunt perspiciatis laborum aliquid cupiditate distinctio minus quae officia repellendus maxime. Quia deserunt nostrum consequuntur veniam, quae quisquam saepe vel. Quod.</p>
+            
             <a href="index.html" class="wshipping-button cta-btn">Back to Home</a> </div>
         </div>
       </div>
@@ -211,16 +432,14 @@
   
   <!-- Footer start -->
   <footer class="site-footer"> 
-      <!-- Footer start -->
-  <footer class="site-footer"> 
     <!-- Footer Top start -->
     <div class="footer-top-area">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">
             <div class="footer-wiz">
-              <h3 class="footer-logo"><img src="../assets/images/logo-white.png" alt="footer logo"/></h3>
-<p>6034 Hamilton blvd, PMB 1063 Allentown PA 18106</p>
+              <h3 class="footer-logo"><img src="assets/images/logo-white.png" alt="footer logo"/></h3>
+              <p>6034 Hamilton blvd, PMB 1063 Allentown PA 18106</p>
               <ul class="footer-contact">
                 <li><i class="fa fa-phone"></i> (610) 982-1101</li>
                 <li><i class="fa fa-envelope"></i> admin@uftransportation.com</li>
@@ -237,11 +456,11 @@
             <div class="footer-wiz footer-menu">
               <h3 class="footer-wiz-title">Quick Links</h3>
               <ul>
-                <li><a href="../how-it-works/">How it works?</a></li>
+                <li><a href="/how-it-works/">How it works?</a></li>
                 <li><a href="#">For individuals</a></li>
                 <li><a href="#">For businesses</a></li>
-                <li><a href="../why-us/">Why us?</a></li>
-                <li><a href="../contact-us/">Contact</a></li>
+                <li><a href="/why-us/">Why us?</a></li>
+                <li><a href="/contact-us/">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -249,12 +468,12 @@
             <div class="footer-wiz footer-menu">
               <h3 class="footer-wiz-title">Useful Links</h3>
               <ul>
-                <li><a href="../door-to-door/">Door-to-door transport</a></li>
-                <li><a href="../open-car-transport/">Open car transport</a></li>
-                <li><a href="../enclosed-auto-transport/">Enclosed auto transport</a></li>
-                <li><a href="../motorcycle-shipping/">Motorcycle shipping</a></li>
-                <li><a href="../car-buyers-auto-transport/">Online car buyers</a></li>
-                <li><a href="../students-auto-transport/">College students</a></li>
+                <li><a href="/door-to-door/">Door-to-door transport</a></li>
+                <li><a href="/open-car-transport/">Open car transport</a></li>
+                <li><a href="/enclosed-auto-transport/">Enclosed auto transport</a></li>
+                <li><a href="/motorcycle-shipping/">Motorcycle shipping</a></li>
+                <li><a href="/car-buyers-auto-transport/">Online car buyers</a></li>
+                <li><a href="/students-auto-transport/">College students</a></li>
               </ul>
             </div>
           </div>
