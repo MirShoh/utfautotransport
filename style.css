@@ -686,8 +686,8 @@ a#skiptocontent:active, a#skiptocontent:focus {
 	width: 40px;
 	height: 40px;
 	position: fixed;
-	bottom: 60px;
-	right: 50px;
+	bottom: 120px;
+	right: 40px;
 	display: none;
 	color: #fff;
 	z-index: 3;
@@ -1397,15 +1397,16 @@ header:after {
 .process-row {
 	padding-top: 40px;
 	display: flex;
+	justify-content: center;
 }
 .process-step {
 	margin-right: 14%;
 	position: relative;
 }
 .process-step1 {
-	margin-right: 14%;
+	margin-right: 35px;
 	position: relative;
-	margin-left: 7%;
+	margin-left: 15px;
 }
 .process-step p {
 	margin-bottom: 0px;
@@ -1460,11 +1461,17 @@ header:after {
 	float: left;
 	border-radius: 100%;
 	background-color: #fff;
-	border: 2px solid #eb0028;
+	/* border: 2px solid #eb0028; */
 	position: relative;
-	padding-top: 44px;
+	/* padding-top: 44px; */
 	margin-bottom: 10px;
 }
+
+.process-icon img {
+    max-width: 164px;
+    /* margin-top: -39px; */
+}
+
 .process-icon1 {
 	width: 164px;
 	text-align: center;
@@ -4787,6 +4794,10 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 	.changing-text {
 		font-size: 35px !important;
 	}
+	/* .scrollup {
+		bottom: 90px;
+		right: 40px;
+	} */
 }
 
 @media (max-width: 468px) {
@@ -4815,6 +4826,15 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 	h2.heading2-border, h3.heading3-border, h4.heading4-border {
 		margin-top: 15px !important;
 	}
+
+	.process-icon img {
+		max-width: 164px !important;
+		margin-top: -39px !important;
+	}
+	.contact_phone {
+		font-size: 18px !important;
+		color: #ffffff !important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -4822,6 +4842,10 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 		font-size: 20px !important;
 		color: #fff !important;
 	} 
+	.contact_phone {
+		font-size: 18px !important;
+		color: #ffffff !important;
+	}
 	.process-row {
 		display: flex !important;
 		justify-self: center !important;
@@ -4879,4 +4903,19 @@ p.review-text.text-body.is-caption.is-gray.with-mb-24 a:hover {
 	}
 }
 
+@media (min-width: 376px) {
+	.changing-text {
+		font-size: 32px!important;
+	}
+}
 
+
+.text-display {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.changing-text {
+		font-size: 50px!important;
+	}
+}
