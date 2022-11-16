@@ -621,7 +621,7 @@ a#skiptocontent:active, a#skiptocontent:focus {
 }
 /*-------------- Preloader Css ------------------*/
 
-.wshipping-site-preloader-wrapper {
+/* .wshipping-site-preloader-wrapper {
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -659,7 +659,7 @@ a#skiptocontent:active, a#skiptocontent:focus {
 .double-bounce2 {
 	-webkit-animation-delay: -1.0s;
 	animation-delay: -1.0s;
-}
+} */
  @-webkit-keyframes sk-bounce {
  0%, 100% {
  transform: scale(0.0);
